@@ -23,5 +23,5 @@ export default class OrderModel extends Model {
     declare total: number;
 
     @HasMany(() => OrderItemModel)
-    declare items: OrderItemModel;
+    declare items: OrderItemModel[];
 }
